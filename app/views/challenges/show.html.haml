@@ -1,0 +1,8 @@
+%h1= @challenge.title
+%p= @challenge.description
+%p= @challenge.begin_period
+%p= @challenge.end_period
+
+= link_to "Back", root_path, class: "btn btn-default"
+= link_to "Edit", edit_challenge_path, class: "btn btn-default"
+= link_to "Destroy", challenge_path, method: :delete, data: {confirm: "Are you sure?"}, class:   "btn btn-default"
